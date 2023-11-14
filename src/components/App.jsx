@@ -4,14 +4,14 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 import { Loader } from './Loader/Loader';
-import { selectContacts, selectError, selectIsLoading } from 'redux/selectors';
+import { selectContacts, selectIsLoading } from 'redux/selectors';
 import { fetchContacts } from 'redux/operations';
 
 
 export const App = () => {
   const contacts = useSelector(selectContacts);
   const isLoading = useSelector(selectIsLoading);
-  const error = useSelector(selectError);
+ 
 
   const dispatch = useDispatch();
 
